@@ -18,10 +18,9 @@ class Home extends StatelessWidget {
       body:Center(
 
         child: Image(
-          image: NetworkImage('https://images.unsplash.com/photo-1560084604-9e28a8fd3b42?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1189&q=80'),
-        )
+          image: AssetImage('assets/soil.jpeg'),
       ),
-
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Text('click'),
