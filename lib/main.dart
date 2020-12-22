@@ -17,9 +17,11 @@ class Home extends StatelessWidget {
       ),
       body:Center(
 
-        child: Image(
-          image: AssetImage('assets/soil.jpeg'),
-      ),
+        child: Icon(
+          Icons.local_airport_sharp ,
+          color: Colors.lightBlue,
+          size: 50.0,
+        )
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
