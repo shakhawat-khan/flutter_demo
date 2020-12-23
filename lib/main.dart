@@ -12,25 +12,18 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('hello'),
+
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body:Center(
+      body: Container(
+        padding: EdgeInsets.fromLTRB(10,20,30,40),
+        margin: EdgeInsets.all(30.0),
+        color: Colors.green,
+        child: Text('here is me'),
 
-        child: RaisedButton.icon(
-          onPressed: () {},
-          icon: Icon(
-            Icons.mail
-        ),
-        label: Text('mail me'),
-        color: Colors.blue,
-        )
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Text('click'),
-        backgroundColor: Colors.red[600],
-      ),
+      )
+
     );
 
   }
