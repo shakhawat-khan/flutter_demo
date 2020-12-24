@@ -16,12 +16,23 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Container(
-        padding: EdgeInsets.fromLTRB(10,20,30,40),
-        margin: EdgeInsets.all(30.0),
-        color: Colors.green,
-        child: Text('here is me'),
+      body: Row(
+        crossAxisAlignment: CrossAxisAlignment.end,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly, //
+        children: <Widget> [
+          Text('lol'),
+          FlatButton(onPressed: () {},
+              color: Colors.lightBlueAccent ,
+              child: Text('click me')
+          ),
 
+          Container(
+            color: Colors.cyan,
+            padding: EdgeInsets.all(30.0),
+            child: Text('inside comtainer'),
+          )
+
+        ],
       )
 
     );
